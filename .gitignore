@@ -1,0 +1,20 @@
+# Credenciais e variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Configuração local da Vercel
+.vercel/
+
+# Dependências
+node_modules/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários
+*.log
+*.tmp
+*-backup.*README-AJUSTES.md
+README-AJUSTES.md
