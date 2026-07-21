@@ -1,15 +1,28 @@
 /**
- * AF Corretora — Configurações
- * Ajuste os valores abaixo antes de publicar.
+ * AF Corretora — Configurações públicas
+ *
+ * Este arquivo pode ser publicado no GitHub.
+ * Não adicione senhas, tokens ou chaves privadas.
  */
-window.AF_CONFIG = {
-  // WhatsApp (formato internacional, apenas números)
-  whatsappNumber: "5511000000000",     // ex: 5511987654321
-  whatsappMessage: "Olá! Encontrei vocês pelo site e gostaria de fazer uma cotação de seguro.",
-  // Endpoint opcional para receber o formulário (Google Sheets/n8n/Make/CRM).
-  // Deixe em branco ("") para desativar o envio HTTP (a página apenas mostra sucesso).
+window.AF_CONFIG = Object.freeze({
+  // WhatsApp oficial — formato internacional, somente números.
+  whatsappNumber: "5511974816598",
+
+  // Mensagem padrão utilizada nos links de contato.
+  whatsappMessage:
+    "Olá! Encontrei a AF Corretora pelo site e gostaria de solicitar uma cotação.",
+
+  /**
+   * Endpoint responsável por receber o formulário.
+   *
+   * Enquanto a API e o banco não estiverem configurados,
+   * mantenha este valor vazio.
+   */
   formEndpoint: "",
-  // Analytics (opcional — os eventos são disparados se gtag/fbq estiverem carregados)
-  gaMeasurementId: "",   // ex: "G-XXXXXXX"
-  metaPixelId: "",       // ex: "1234567890"
-};
+
+  // Identificador do Google Analytics, quando configurado.
+  gaMeasurementId: "",
+
+  // Identificador do Meta Pixel, quando configurado.
+  metaPixelId: "",
+});
