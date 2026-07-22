@@ -1,1248 +1,1582 @@
 <!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>AF Corretora | Planos de Saúde e Seguros em São Paulo</title>
-  <meta
-    name="description"
-    content="AF Corretora de Seguros e Saúde: planos de saúde e odontológicos, seguro auto, residencial, empresarial, vida, viagem, bike e fiança. Atendimento consultivo em São Paulo."
-  />
-  <meta name="robots" content="index, follow" />
-  <meta name="author" content="AF Corretora de Seguros e Saúde" />
-  <meta name="theme-color" content="#111111" />
+    <title>AF Corretora | Planos de Saúde e Seguros em São Paulo</title>
+    <meta
+      name="description"
+      content="AF Corretora de Seguros e Saúde: planos de saúde e odontológicos, seguro auto, residencial, empresarial, vida, viagem, bike e fiança. Atendimento consultivo em São Paulo."
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="AF Corretora de Seguros e Saúde" />
+    <meta name="theme-color" content="#111111" />
 
-  <!--
+    <!--
     PENDENTE DE PUBLICAÇÃO:
     inserir a URL absoluta do domínio quando ele estiver definido.
     Exemplo:
     <link rel="canonical" href="https://www.afcorretora.com.br/" />
   -->
 
-  <!-- Open Graph / compartilhamento -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="AF Corretora de Seguros e Saúde" />
-  <meta property="og:title" content="AF Corretora | Planos de Saúde e Seguros" />
-  <meta
-    property="og:description"
-    content="Atendimento consultivo e personalizado para proteger sua saúde, sua família, seu patrimônio e sua empresa."
-  />
-  <meta property="og:image" content="./assets/img/og-image.png" />
-  <meta property="og:image:alt" content="Logotipo da AF Corretora de Seguros e Saúde" />
-  <meta property="og:locale" content="pt_BR" />
+    <!-- Open Graph / compartilhamento -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="AF Corretora de Seguros e Saúde" />
+    <meta
+      property="og:title"
+      content="AF Corretora | Planos de Saúde e Seguros"
+    />
+    <meta
+      property="og:description"
+      content="Atendimento consultivo e personalizado para proteger sua saúde, sua família, seu patrimônio e sua empresa."
+    />
+    <meta property="og:image" content="./assets/img/og-image.png" />
+    <meta
+      property="og:image:alt"
+      content="Logotipo da AF Corretora de Seguros e Saúde"
+    />
+    <meta property="og:locale" content="pt_BR" />
 
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AF Corretora | Planos de Saúde e Seguros" />
-  <meta
-    name="twitter:description"
-    content="Atendimento consultivo e personalizado para planos de saúde e seguros."
-  />
-  <meta name="twitter:image" content="./assets/img/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="AF Corretora | Planos de Saúde e Seguros"
+    />
+    <meta
+      name="twitter:description"
+      content="Atendimento consultivo e personalizado para planos de saúde e seguros."
+    />
+    <meta name="twitter:image" content="./assets/img/og-image.png" />
 
-  <!-- Fontes -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-    rel="stylesheet"
-  />
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Ícones -->
-  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+    <!-- Ícones -->
+    <script
+      src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"
+      defer
+    ></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./styles-additions.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles-additions.css" />
+    <link rel="stylesheet" href="./trust-section.css" />
 
-  <!-- Schema.org: InsuranceAgency -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "InsuranceAgency",
-    "name": "AF Corretora de Seguros e Saúde",
-    "description": "Corretora de seguros e planos de saúde com atendimento consultivo e personalizado em São Paulo.",
-    "telephone": "+55 11 97481-6598",
-    "areaServed": {
-      "@type": "AdministrativeArea",
-      "name": "São Paulo, SP"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "São Paulo",
-      "addressRegion": "SP",
-      "addressCountry": "BR"
-    },
-    "employee": {
-      "@type": "Person",
-      "name": "Débora Romero Franco de Almeida",
-      "jobTitle": "Corretora responsável"
-    },
-    "identifier": {
-      "@type": "PropertyValue",
-      "name": "Registro SUSEP",
-      "value": "261181203"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "opens": "08:00",
-      "closes": "18:00"
-    },
-    "sameAs": [
-      "https://www.instagram.com/af_corretora_seguro_saude/"
-    ],
-    "makesOffer": [
+    <!-- Schema.org: InsuranceAgency -->
+    <script type="application/ld+json">
       {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Planos de Saúde"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Planos Odontológicos"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Auto"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Residencial"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Empresarial"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro de Vida"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Viagem"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Bike"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Seguro Fiança"
-        }
+        "@context": "https://schema.org",
+        "@type": "InsuranceAgency",
+        "name": "AF Corretora de Seguros e Saúde",
+        "description": "Corretora de seguros e planos de saúde com atendimento consultivo e personalizado em São Paulo.",
+        "telephone": "+55 11 97481-6598",
+        "email": "debora-afcorretora@hotmail.com",
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "São Paulo, SP"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "São Paulo",
+          "addressRegion": "SP",
+          "addressCountry": "BR"
+        },
+        "employee": {
+          "@type": "Person",
+          "name": "Débora Romero Franco de Almeida",
+          "jobTitle": "Corretora responsável"
+        },
+        "identifier": {
+          "@type": "PropertyValue",
+          "name": "Registro SUSEP",
+          "value": "261181203"
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "opens": "08:00",
+          "closes": "18:00"
+        },
+        "sameAs": ["https://www.instagram.com/af_corretora_seguro_saude/"],
+        "makesOffer": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Planos de Saúde"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Planos Odontológicos"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Auto"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Residencial"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Empresarial"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro de Vida"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Viagem"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Bike"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Seguro Fiança"
+            }
+          }
+        ]
       }
-    ]
-  }
-  </script>
+    </script>
 
-  <!-- Schema.org: FAQPage -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
+    <!-- Schema.org: FAQPage -->
+    <script type="application/ld+json">
       {
-        "@type": "Question",
-        "name": "Como solicitar uma cotação?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Você pode solicitar atendimento pelo WhatsApp ou preencher o formulário da página com seus dados e o tipo de proteção procurado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quanto tempo leva para receber uma cotação?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "O prazo varia conforme o produto e as informações necessárias. A solicitação é analisada antes do retorno personalizado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Quais soluções a AF Corretora oferece?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A AF Corretora atua com planos de saúde e odontológicos, seguros auto, residencial, empresarial, vida, viagem, bike, fiança e outras soluções disponíveis para análise."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Posso parcelar o seguro?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "As condições de pagamento e parcelamento dependem do produto, da seguradora ou operadora e das regras vigentes no momento da contratação."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Como funciona o atendimento em caso de sinistro?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A AF Corretora orienta o cliente sobre documentos, prazos e comunicação com a seguradora durante o processo."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "A corretora analisa opções de diferentes seguradoras e operadoras?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim. As alternativas disponíveis são avaliadas conforme o perfil, a região, o produto procurado e as regras de aceitação."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "A AF Corretora atende pessoas e empresas?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Sim. O atendimento contempla pessoas físicas, famílias, profissionais e empresas, conforme o produto solicitado."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Qual é o horário de atendimento?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "O atendimento comercial informado é das 8h às 18h."
-        }
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Como solicitar uma cotação?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Você pode solicitar atendimento pelo WhatsApp ou preencher o formulário da página com seus dados e o tipo de proteção procurado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo leva para receber uma cotação?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O prazo varia conforme o produto e as informações necessárias. A solicitação é analisada antes do retorno personalizado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quais soluções a AF Corretora oferece?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A AF Corretora atua com planos de saúde e odontológicos, seguros auto, residencial, empresarial, vida, viagem, bike, fiança e outras soluções disponíveis para análise."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Posso parcelar o seguro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "As condições de pagamento e parcelamento dependem do produto, da seguradora ou operadora e das regras vigentes no momento da contratação."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Como funciona o atendimento em caso de sinistro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A AF Corretora orienta o cliente sobre documentos, prazos e comunicação com a seguradora durante o processo."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A corretora analisa opções de diferentes seguradoras e operadoras?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. As alternativas disponíveis são avaliadas conforme o perfil, a região, o produto procurado e as regras de aceitação."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A AF Corretora atende pessoas e empresas?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. O atendimento contempla pessoas físicas, famílias, profissionais e empresas, conforme o produto solicitado."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qual é o horário de atendimento?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "O atendimento comercial informado é das 8h às 18h."
+            }
+          }
+        ]
       }
-    ]
-  }
-  </script>
-</head>
+    </script>
+  </head>
 
-<body>
-  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header" id="topo">
-    <div class="container header-inner">
-      <a href="#topo" class="brand brand-with-logo" aria-label="AF Corretora de Seguros e Saúde — início">
-        <img
-          src="./assets/img/logo-af-corretora.png"
-          alt="AF Corretora de Seguros e Saúde"
-          class="brand-logo"
-          width="300"
-          height="180"
-        />
-      </a>
-
-      <button
-        class="menu-toggle"
-        type="button"
-        aria-expanded="false"
-        aria-controls="menu-principal"
-        aria-label="Abrir ou fechar menu principal"
-      >
-        <span>Menu</span>
-        <i data-lucide="menu" aria-hidden="true"></i>
-      </button>
-
-      <nav class="nav" id="menu-principal" aria-label="Menu principal">
-        <a href="#servicos">Seguros</a>
-        <a href="#sobre">Sobre</a>
-        <a href="#diferenciais">Diferenciais</a>
-        <a href="#processo">Como funciona</a>
-        <a href="#cotacao">Cotação</a>
-        <a href="#faq">FAQ</a>
-      </nav>
-
-      <a
-        href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20encontrei%20a%20AF%20Corretora%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
-        class="btn btn-primary btn-sm nav-cta"
-        target="_blank"
-        rel="noopener noreferrer"
-        data-wa
-        data-track="click_quote_header"
-      >
-        Cotar agora
-      </a>
-    </div>
-  </header>
-
-  <main id="conteudo">
-    <!-- HERO -->
-    <section class="hero section" aria-labelledby="hero-title">
-      <div class="hero-bg" aria-hidden="true"></div>
-
-      <div class="container hero-grid">
-        <div class="hero-content">
-          <span class="pill">
-            <i data-lucide="sparkles" aria-hidden="true"></i>
-            Planos de saúde e seguros em São Paulo
-          </span>
-
-          <h1 id="hero-title" class="hero-title">
-            Encontre a proteção ideal
-            <span class="text-gold">para sua saúde, família e patrimônio.</span>
-          </h1>
-
-          <p class="hero-lead">
-          Receba atendimento personalizado para analisar planos de saúde e seguros
-          adequados ao seu perfil, com orientação clara antes, durante e após a contratação.
-          </p>
-
-          <div class="hero-cta" aria-label="Ações principais">
-            <a
-              href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20encontrei%20a%20AF%20Corretora%20pelo%20site%20e%20gostaria%20de%20receber%20uma%20cota%C3%A7%C3%A3o%20personalizada." 
-              class="btn btn-whatsapp btn-lg"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-wa
-              data-track="click_whatsapp_hero"
-            >
-              <i data-lucide="message-circle" aria-hidden="true"></i>
-              Solicitar cotação gratuita
-            </a>
-
-            <a href="#servicos" class="btn btn-ghost btn-lg" data-track="click_services_hero">
-             Conhecer as soluções
-             <i data-lucide="arrow-right" aria-hidden="true"></i>
-            </a>
-		  </div>
-
-          <p class="hero-check">
-            <i data-lucide="check-circle-2" aria-hidden="true"></i>
-            Atendimento humanizado • Análise de opções • Suporte no pós-venda
-          </p>
-        </div>
-
-        <aside class="hero-card" aria-label="Soluções mais procuradas">
-          <div class="hero-card-title">Como podemos proteger você</div>
-
-          <ul class="hero-card-list">
-            <li>
-              <span class="hi hi-gold"><i data-lucide="heart-pulse" aria-hidden="true"></i></span>
-              Saúde e odontológico
-            </li>
-            <li>
-              <span class="hi hi-gold"><i data-lucide="car" aria-hidden="true"></i></span>
-              Seguro Auto
-            </li>
-            <li>
-              <span class="hi hi-gold"><i data-lucide="home" aria-hidden="true"></i></span>
-              Seguro Residencial
-            </li>
-            <li>
-              <span class="hi hi-gold"><i data-lucide="briefcase-business" aria-hidden="true"></i></span>
-              Seguro Empresarial
-            </li>
-          </ul>
-
-          <div class="hero-card-note">
-            <strong>Orientação antes da contratação</strong><br />
-              A AF analisa seu perfil e explica as alternativas disponíveis com clareza.
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <!-- SERVIÇOS -->
-    <section id="servicos" class="section section-subtle" aria-labelledby="servicos-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Nossas soluções</span>
-          <h2 id="servicos-title">Proteção para diferentes momentos e necessidades</h2>
-          <p>
-            Selecione a solução procurada para iniciar uma solicitação personalizada.
-          </p>
-        </div>
-
-        <div class="grid grid-4 services-grid" id="services-grid">
-          <article class="service-card priority">
-            <span class="service-icon">
-              <i data-lucide="heart-pulse" aria-hidden="true"></i>
-            </span>
-            <h3>Saúde e Odontológico</h3>
-            <p>Planos individuais, familiares e empresariais, conforme disponibilidade e perfil.</p>
-            <a href="#cotacao" data-service="Plano de Saúde" data-track="click_service_health">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card priority">
-            <span class="service-icon">
-              <i data-lucide="car" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Auto</h3>
-            <p>Análise de perfil, coberturas, assistências e condições disponíveis.</p>
-            <a href="#cotacao" data-service="Seguro Auto" data-track="click_service_auto">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card priority">
-            <span class="service-icon">
-              <i data-lucide="home" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Residencial</h3>
-            <p>Proteção para residência, bens e situações previstas na cobertura contratada.</p>
-            <a href="#cotacao" data-service="Seguro Residencial" data-track="click_service_home">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon">
-              <i data-lucide="briefcase-business" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Empresarial</h3>
-            <p>Soluções para patrimônio, operação e continuidade de empresas.</p>
-            <a href="#cotacao" data-service="Seguro Empresarial" data-track="click_service_business">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon">
-              <i data-lucide="shield" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro de Vida</h3>
-            <p>Proteção financeira para pessoas, famílias, profissionais e equipes.</p>
-            <a href="#cotacao" data-service="Seguro de Vida" data-track="click_service_life">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon">
-              <i data-lucide="plane" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Viagem</h3>
-            <p>Assistências e coberturas para viagens nacionais e internacionais.</p>
-            <a href="#cotacao" data-service="Seguro Viagem" data-track="click_service_travel">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon">
-              <i data-lucide="bike" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Bike</h3>
-            <p>Alternativas de proteção para bicicleta, conforme condições do produto.</p>
-            <a href="#cotacao" data-service="Seguro Bike" data-track="click_service_bike">
-              Solicitar cotação
-            </a>
-          </article>
-
-          <article class="service-card">
-            <span class="service-icon">
-              <i data-lucide="key-round" aria-hidden="true"></i>
-            </span>
-            <h3>Seguro Fiança</h3>
-            <p>Solução que pode substituir outras garantias em contratos de locação.</p>
-            <a href="#cotacao" data-service="Seguro Fiança" data-track="click_service_fianca">
-              Solicitar cotação
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- DESTAQUE SAÚDE -->
-    <section class="section highlight-section" aria-labelledby="saude-title">
-      <div class="container highlight-card">
-        <div>
-          <span class="kicker kicker-gold">Atuação prioritária</span>
-          <h2 id="saude-title">
-            Planos de saúde e odontológicos com orientação para uma escolha consciente.
-          </h2>
-          <p>
-            A AF Corretora compreende o perfil do cliente, analisa alternativas disponíveis
-            e explica pontos relevantes antes da contratação.
-          </p>
-        </div>
-
+    <header class="site-header" id="topo">
+      <div class="container header-inner">
         <a
-          href="#cotacao"
-          class="btn btn-primary"
-          data-service="Plano de Saúde"
-          data-track="click_health_highlight"
+          href="#topo"
+          class="brand brand-with-logo"
+          aria-label="AF Corretora de Seguros e Saúde — início"
         >
-          Cotar plano de saúde
-        </a>
-      </div>
-    </section>
-
-    <!-- SOBRE -->
-    <section id="sobre" class="section" aria-labelledby="sobre-title">
-      <div class="container about-grid">
-        <div class="about-content">
-          <span class="kicker">Sobre a AF Corretora</span>
-
-          <h2 id="sobre-title">Atendimento humano, consultivo e personalizado</h2>
-
-          <p class="muted">
-            A AF Corretora de Seguros e Saúde atua para ajudar pessoas, famílias e empresas
-            a compreenderem coberturas, condições e alternativas antes da contratação.
-          </p>
-
-          <p class="muted">
-            O atendimento é conduzido por <strong>Débora Romero Franco de Almeida</strong>,
-            corretora responsável, com foco em clareza, proximidade e acompanhamento em
-            diferentes etapas da jornada do cliente.
-          </p>
-
-          <ul class="about-meta">
-            <li>
-              <i data-lucide="badge-check" aria-hidden="true"></i>
-              <span><strong>Registro SUSEP:</strong> 261181203</span>
-            </li>
-            <li>
-              <i data-lucide="clock-3" aria-hidden="true"></i>
-              <span><strong>Atendimento comercial:</strong> das 8h às 18h</span>
-            </li>
-            <li>
-              <i data-lucide="map-pin" aria-hidden="true"></i>
-              <span><strong>Atuação principal:</strong> São Paulo/SP</span>
-            </li>
-          </ul>
-
-          <a
-            href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20AF%20Corretora."
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-wa
-            data-track="click_whatsapp_about"
-          >
-            <i data-lucide="message-circle" aria-hidden="true"></i>
-            Falar com Débora
-          </a>
-        </div>
-
-        <figure class="about-media">
-          <img
-            src="./assets/img/debora-almeida.png"
-            alt="Apresentação profissional de Débora Almeida, corretora de seguros e planos de saúde"
-            loading="lazy"
-            decoding="async"
-            width="900"
-            height="1350"
-          />
-          <figcaption>
-            Débora Romero Franco de Almeida — corretora responsável.
-          </figcaption>
-        </figure>
-      </div>
-    </section>
-
-    <!-- SEGURADORAS E OPERADORAS -->
-    <section class="section section-subtle" aria-labelledby="parceiros-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Operadoras e seguradoras</span>
-          <h2 id="parceiros-title">Alternativas analisadas conforme cada solicitação</h2>
-          <p>
-            A disponibilidade depende do produto, perfil, região, regras de aceitação
-            e condições vigentes no momento da cotação.
-          </p>
-        </div>
-
-        <div class="partners-list" aria-label="Operadoras e seguradoras com as quais a corretora informou trabalhar">
-          <span class="partner-name">Hapvida</span>
-          <span class="partner-name">SulAmérica</span>
-          <span class="partner-name">Amil</span>
-          <span class="partner-name">Porto</span>
-          <span class="partner-name">Prevent Senior</span>
-          <span class="partner-name">Unimed</span>
-          <span class="partner-name">Bradesco Seguros</span>
-          <span class="partner-name">Yelum</span>
-          <span class="partner-name">Allianz</span>
-          <span class="partner-name">Mapfre</span>
-        </div>
-
-        <p class="fine partners-note">
-          Marcas citadas para fins informativos. A oferta e a disponibilidade de cada produto
-          devem ser confirmadas durante o atendimento.
-        </p>
-      </div>
-    </section>
-
-    <!-- DIFERENCIAIS -->
-    <section id="diferenciais" class="section" aria-labelledby="diferenciais-title">
-      <div class="container why-grid">
-        <div>
-          <span class="kicker">Por que escolher a AF</span>
-          <h2 id="diferenciais-title">Você não precisa analisar seguros sozinho.</h2>
-
-          <p class="muted">
-            O atendimento consultivo ajuda a compreender diferenças entre coberturas,
-            condições e alternativas compatíveis com cada necessidade.
-          </p>
-
-          <a
-            href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
-            class="btn btn-primary"
-            target="_blank"
-            rel="noopener noreferrer"
-            data-wa
-            data-track="click_whatsapp_whyus"
-          >
-            <i data-lucide="message-circle" aria-hidden="true"></i>
-            Falar com a corretora
-          </a>
-        </div>
-
-        <div class="grid grid-2 diff-grid" id="diff-grid">
-          <article class="benefit-card">
-            <i data-lucide="search-check" aria-hidden="true"></i>
-            <h3>Análise de alternativas</h3>
-            <p>Opções avaliadas conforme perfil, região, cobertura e necessidade apresentada.</p>
-          </article>
-
-          <article class="benefit-card">
-            <i data-lucide="hand-heart" aria-hidden="true"></i>
-            <h3>Atendimento humanizado</h3>
-            <p>Comunicação próxima, respeitosa e sem excesso de termos técnicos.</p>
-          </article>
-
-          <article class="benefit-card">
-            <i data-lucide="badge-check" aria-hidden="true"></i>
-            <h3>Transparência</h3>
-            <p>Orientação clara sobre condições, limites, coberturas e próximos passos.</p>
-          </article>
-
-          <article class="benefit-card">
-            <i data-lucide="life-buoy" aria-hidden="true"></i>
-            <h3>Suporte no pós-venda</h3>
-            <p>Acompanhamento em dúvidas, renovações e orientações relacionadas a sinistros.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- PROCESSO -->
-    <section id="processo" class="section section-subtle" aria-labelledby="processo-title">
-      <div class="container">
-        <div class="section-head">
-          <span class="kicker">Como funciona</span>
-          <h2 id="processo-title">Um processo direto, da solicitação ao suporte</h2>
-          <p>Você recebe orientação em cada etapa necessária para avaliar e contratar.</p>
-        </div>
-
-        <ol class="grid steps steps-5" id="steps-grid">
-          <li>
-            <span>1</span>
-            <h3>Solicitação</h3>
-            <p>Você chama pelo WhatsApp ou envia o formulário.</p>
-          </li>
-
-          <li>
-            <span>2</span>
-            <h3>Entendimento</h3>
-            <p>A corretora identifica sua necessidade, seu perfil e suas prioridades.</p>
-          </li>
-
-          <li>
-            <span>3</span>
-            <h3>Análise</h3>
-            <p>São avaliadas alternativas disponíveis e compatíveis com a solicitação.</p>
-          </li>
-
-          <li>
-            <span>4</span>
-            <h3>Apresentação</h3>
-            <p>Você recebe orientações sobre coberturas, condições e valores.</p>
-          </li>
-
-          <li>
-            <span>5</span>
-            <h3>Contratação e suporte</h3>
-            <p>A AF auxilia na contratação e nas necessidades posteriores.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- FORMULÁRIO -->
-    <section id="cotacao" class="section" aria-labelledby="cotacao-title">
-      <div class="container">
-        <div class="form-shell">
-          <aside class="form-aside">
-            <span class="kicker kicker-gold">Cotação online</span>
-            <h2 id="cotacao-title">Solicite uma análise personalizada</h2>
-
-            <p>
-              Preencha o formulário para que a AF Corretora compreenda sua necessidade
-              e dê continuidade ao atendimento.
-            </p>
-
-            <ul class="checks">
-              <li>
-                <i data-lucide="check-circle-2" aria-hidden="true"></i>
-                Solicitação inicial realizada online
-              </li>
-              <li>
-                <i data-lucide="check-circle-2" aria-hidden="true"></i>
-                Atendimento humano e consultivo
-              </li>
-              <li>
-                <i data-lucide="check-circle-2" aria-hidden="true"></i>
-                Retorno após a análise dos dados enviados
-              </li>
-            </ul>
-
-            <div class="wa-box">
-              <div class="wa-title">
-                <i data-lucide="message-circle" aria-hidden="true"></i>
-                Prefere WhatsApp?
-              </div>
-
-              <a
-                href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
-                target="_blank"
-                rel="noopener noreferrer"
-                data-wa
-                data-track="click_whatsapp_form"
-                class="wa-link"
-              >
-                Fale conosco agora
-              </a>
-            </div>
-          </aside>
-
-          <div class="form-body">
-            <form id="quote-form" class="quote-form">
-              <div class="field">
-                <label for="name">Nome completo *</label>
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  autocomplete="name"
-                  required
-                  minlength="3"
-                  placeholder="Seu nome completo"
-                />
-              </div>
-
-              <div class="row-2">
-                <div class="field">
-                  <label for="whatsapp">WhatsApp *</label>
-                  <input
-                    id="whatsapp"
-                    name="whatsapp"
-                    type="tel"
-                    inputmode="tel"
-                    autocomplete="tel"
-                    required
-                    placeholder="(11) 99999-9999"
-                  />
-                </div>
-
-                <div class="field">
-                  <label for="email">E-mail</label>
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    autocomplete="email"
-                    placeholder="seuemail@exemplo.com"
-                  />
-                </div>
-              </div>
-
-              <div class="row-2">
-                <div class="field">
-                  <label for="city">Cidade *</label>
-                  <input
-                    id="city"
-                    name="city"
-                    type="text"
-                    autocomplete="address-level2"
-                    value="São Paulo"
-                    required
-                  />
-                </div>
-
-                <div class="field">
-                  <label for="state">Estado *</label>
-                  <select id="state" name="state" autocomplete="address-level1" required>
-                    <option value="SP" selected>SP</option>
-                    <option value="Outro">Outro</option>
-                  </select>
-                </div>
-              </div>
-
-              <div class="field">
-                <label for="insuranceType">Solução desejada *</label>
-                <select id="insuranceType" name="insuranceType" required>
-                  <option value="" disabled selected>Selecione uma opção</option>
-                  <option value="Plano de Saúde">Plano de Saúde</option>
-                  <option value="Plano Odontológico">Plano Odontológico</option>
-                  <option value="Seguro Auto">Seguro Auto</option>
-                  <option value="Seguro Residencial">Seguro Residencial</option>
-                  <option value="Seguro Empresarial">Seguro Empresarial</option>
-                  <option value="Seguro de Vida">Seguro de Vida</option>
-                  <option value="Seguro Viagem">Seguro Viagem</option>
-                  <option value="Seguro Bike">Seguro Bike</option>
-                  <option value="Seguro Fiança">Seguro Fiança</option>
-                  <option value="Outro">Outro</option>
-                </select>
-              </div>
-
-              <fieldset id="auto-fields" class="auto-fields hidden" aria-live="polite">
-                <legend>Dados opcionais para Seguro Auto</legend>
-
-                <div class="row-2">
-                  <div class="field">
-                    <label for="vehicle">Veículo</label>
-                    <input id="vehicle" name="vehicle" type="text" placeholder="Ex.: Honda Fit" />
-                  </div>
-
-                  <div class="field">
-                    <label for="model">Modelo</label>
-                    <input id="model" name="model" type="text" placeholder="Ex.: EXL" />
-                  </div>
-                </div>
-
-                <div class="row-2">
-                  <div class="field">
-                    <label for="year">Ano</label>
-                    <input
-                      id="year"
-                      name="year"
-                      type="text"
-                      inputmode="numeric"
-                      maxlength="4"
-                      placeholder="Ex.: 2022"
-                    />
-                  </div>
-
-                  <div class="field">
-                    <label for="cep">CEP de pernoite</label>
-                    <input
-                      id="cep"
-                      name="cep"
-                      type="text"
-                      inputmode="numeric"
-                      maxlength="9"
-                      placeholder="00000-000"
-                    />
-                  </div>
-                </div>
-              </fieldset>
-
-              <div class="field">
-                <label for="notes">Observações</label>
-                <textarea
-                  id="notes"
-                  name="notes"
-                  rows="4"
-                  maxlength="1000"
-                  placeholder="Conte brevemente o que você precisa"
-                ></textarea>
-              </div>
-
-              <label class="privacy-check" for="privacyConsent">
-                <input
-                  id="privacyConsent"
-                  name="privacyConsent"
-                  type="checkbox"
-                  required
-                />
-                <span>
-                  Autorizo o uso dos dados para atendimento desta solicitação e declaro
-                  que li o
-                  <a href="./politica-de-privacidade.html" target="_blank" rel="noopener">
-                    Aviso de Privacidade
-                  </a>.
-                </span>
-              </label>
-
-              <button type="submit" class="btn btn-primary btn-lg btn-block" data-track="submit_quote_form">
-                Enviar solicitação
-                <i data-lucide="arrow-right" aria-hidden="true"></i>
-              </button>
-
-              <p class="fine">
-                Os dados informados devem ser utilizados exclusivamente para atendimento,
-                análise e retorno desta solicitação.
-              </p>
-
-              <p id="form-feedback" class="form-feedback" role="status" aria-live="polite"></p>
-            </form>
-
-            <div id="form-success" class="success hidden" role="status" aria-live="polite">
-              <div class="success-icon">
-                <i data-lucide="check-circle-2" aria-hidden="true"></i>
-              </div>
-
-              <h3>Solicitação enviada</h3>
-
-              <p>
-                Os dados foram encaminhados para atendimento. A AF Corretora dará
-                continuidade após a análise da solicitação.
-              </p>
-
-              <a
-                href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20acabei%20de%20enviar%20uma%20solicita%C3%A7%C3%A3o%20pelo%20site."
-                class="btn btn-whatsapp"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-wa
-                data-track="click_whatsapp_success"
-              >
-                Continuar pelo WhatsApp
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONFIANÇA -->
-    <section
-      id="confianca"
-      class="section section-subtle trust-section"
-      aria-labelledby="confianca-title"
-    >
-      <div class="container">
-        <div class="section-head trust-head">
-          <span class="kicker">Informações de confiança</span>
-
-          <h2 id="confianca-title">
-            Dados institucionais para um atendimento transparente
-          </h2>
-
-          <p>
-            Informações oficiais da AF Corretora para que você tenha mais segurança
-            no momento do contato e da solicitação da sua cotação.
-          </p>
-        </div>
-
-        <div class="trust-grid-modern">
-          <article class="trust-card-modern">
-            <div class="trust-icon">
-              <i data-lucide="badge-check" aria-hidden="true"></i>
-            </div>
-
-            <h3>Registro SUSEP</h3>
-            <p>261181203</p>
-          </article>
-
-          <article class="trust-card-modern">
-            <div class="trust-icon">
-              <i data-lucide="user-round-check" aria-hidden="true"></i>
-            </div>
-
-            <h3>Responsável</h3>
-            <p>Débora Romero Franco de Almeida</p>
-          </article>
-
-          <article class="trust-card-modern">
-            <div class="trust-icon">
-              <i data-lucide="clock-3" aria-hidden="true"></i>
-            </div>
-
-            <h3>Horário comercial</h3>
-            <p>Das 8h às 18h</p>
-          </article>
-
-          <article class="trust-card-modern">
-            <div class="trust-icon">
-              <i data-lucide="instagram" aria-hidden="true"></i>
-            </div>
-
-            <h3>Instagram oficial</h3>
-
-            <p>
-              <a
-                href="https://www.instagram.com/af_corretora_seguro_saude/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                @af_corretora_seguro_saude
-              </a>
-            </p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- SEO LOCAL -->
-    <section class="section local-section" aria-labelledby="local-title">
-      <div class="container local-card">
-        <span class="kicker">Atendimento local</span>
-        <h2 id="local-title">Planos de saúde e seguros em São Paulo</h2>
-
-        <p>
-          Atendimento consultivo para quem procura planos de saúde e odontológicos,
-          seguro auto, residencial, empresarial, vida, viagem, bike e fiança.
-        </p>
-
-        <div class="keyword-list" aria-label="Principais soluções">
-          <span>Corretora de seguros em São Paulo</span>
-          <span>Plano de saúde em São Paulo</span>
-          <span>Plano odontológico</span>
-          <span>Seguro Auto</span>
-          <span>Seguro Residencial</span>
-          <span>Seguro para empresas</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- FAQ -->
-    <section id="faq" class="section" aria-labelledby="faq-title">
-      <div class="container container-narrow">
-        <div class="section-head">
-          <span class="kicker">Perguntas frequentes</span>
-          <h2 id="faq-title">Tire suas dúvidas</h2>
-          <p>Para uma orientação específica, fale com a AF Corretora pelo WhatsApp.</p>
-        </div>
-
-        <div class="faq-list" id="faq-list">
-          <details>
-            <summary>Como solicitar uma cotação?</summary>
-            <p>
-              Você pode solicitar atendimento pelo WhatsApp ou preencher o formulário
-              da página com seus dados e o tipo de proteção procurado.
-            </p>
-          </details>
-
-          <details>
-            <summary>Quanto tempo leva para receber uma cotação?</summary>
-            <p>
-              O prazo varia conforme o produto e as informações necessárias. A solicitação
-              é analisada antes do retorno personalizado.
-            </p>
-          </details>
-
-          <details>
-            <summary>Quais soluções a AF Corretora oferece?</summary>
-            <p>
-              A corretora atua com planos de saúde e odontológicos, seguros auto,
-              residencial, empresarial, vida, viagem, bike, fiança e outras soluções
-              disponíveis para análise.
-            </p>
-          </details>
-
-          <details>
-            <summary>Posso parcelar o seguro?</summary>
-            <p>
-              As condições de pagamento e parcelamento dependem do produto, da seguradora
-              ou operadora e das regras vigentes no momento da contratação.
-            </p>
-          </details>
-
-          <details>
-            <summary>Como funciona o atendimento em caso de sinistro?</summary>
-            <p>
-              A AF Corretora orienta o cliente sobre documentos, prazos e comunicação
-              com a seguradora durante o processo.
-            </p>
-          </details>
-
-          <details>
-            <summary>A corretora analisa opções de diferentes seguradoras e operadoras?</summary>
-            <p>
-              Sim. As alternativas disponíveis são avaliadas conforme o perfil, a região,
-              o produto procurado e as regras de aceitação.
-            </p>
-          </details>
-
-          <details>
-            <summary>A AF Corretora atende pessoas e empresas?</summary>
-            <p>
-              Sim. O atendimento contempla pessoas físicas, famílias, profissionais
-              e empresas, conforme o produto solicitado.
-            </p>
-          </details>
-
-          <details>
-            <summary>Qual é o horário de atendimento?</summary>
-            <p>O atendimento comercial informado é das 8h às 18h.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="section final-cta" aria-labelledby="final-title">
-      <div class="container">
-        <div class="cta-band">
-          <div>
-            <h2 id="final-title">Solicite uma análise personalizada</h2>
-            <p>
-              Fale com a AF Corretora para compreender as alternativas disponíveis
-              para sua necessidade.
-            </p>
-          </div>
-
-          <div class="cta-actions">
-            <a
-              href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
-              class="btn btn-whatsapp"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-wa
-              data-track="click_whatsapp_cta"
-            >
-              <i data-lucide="message-circle" aria-hidden="true"></i>
-              WhatsApp
-            </a>
-
-            <a href="#cotacao" class="btn btn-outline-light" data-track="click_form_cta">
-              Formulário de cotação
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-grid">
-      <div class="footer-brand">
-        <a href="#topo" class="brand footer-logo" aria-label="AF Corretora de Seguros e Saúde — início">
           <img
             src="./assets/img/logo-af-corretora.png"
             alt="AF Corretora de Seguros e Saúde"
-            class="footer-brand-logo"
-            loading="lazy"
+            class="brand-logo"
             width="300"
             height="180"
           />
         </a>
 
-        <p class="muted">
-          Atendimento consultivo para ajudar pessoas e empresas a compreender,
-          comparar e contratar soluções de proteção adequadas às suas necessidades.
-        </p>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+          aria-label="Abrir ou fechar menu principal"
+        >
+          <span>Menu</span>
+          <i data-lucide="menu" aria-hidden="true"></i>
+        </button>
 
-        <div class="socials" aria-label="Redes sociais">
+        <nav class="nav" id="menu-principal" aria-label="Menu principal">
+          <a href="#servicos">Seguros</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#diferenciais">Diferenciais</a>
+          <a href="#processo">Como funciona</a>
+          <a href="#cotacao">Cotação</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a
+          href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20encontrei%20a%20AF%20Corretora%20pelo%20site%20e%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
+          class="btn btn-primary btn-sm nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+          data-wa
+          data-track="click_quote_header"
+        >
+          Cotar agora
+        </a>
+      </div>
+    </header>
+
+    <main id="conteudo">
+      <!-- HERO -->
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-bg" aria-hidden="true"></div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <span class="pill">
+              <i data-lucide="sparkles" aria-hidden="true"></i>
+              Planos de saúde e seguros em São Paulo
+            </span>
+
+            <h1 id="hero-title" class="hero-title">
+              Encontre a proteção ideal
+              <span class="text-gold">
+                para sua saúde, família e patrimônio.
+              </span>
+            </h1>
+
+            <p class="hero-lead">
+              Receba atendimento personalizado para analisar planos de saúde e
+              seguros adequados ao seu perfil, com orientação clara antes,
+              durante e após a contratação.
+            </p>
+
+            <div class="hero-cta" aria-label="Ações principais">
+              <a
+                href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20encontrei%20a%20AF%20Corretora%20pelo%20site%20e%20gostaria%20de%20receber%20uma%20cota%C3%A7%C3%A3o%20personalizada."
+                class="btn btn-whatsapp btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-wa
+                data-track="click_whatsapp_hero"
+              >
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                Solicitar cotação gratuita
+              </a>
+
+              <a
+                href="#servicos"
+                class="btn btn-ghost btn-lg"
+                data-track="click_services_hero"
+              >
+                Conhecer as soluções
+                <i data-lucide="arrow-right" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <p class="hero-check">
+              <i data-lucide="check-circle-2" aria-hidden="true"></i>
+              Cotação sem compromisso • Atendimento personalizado • Suporte no
+              pós-venda
+            </p>
+          </div>
+
+          <aside class="hero-card" aria-label="Principais soluções oferecidas">
+            <div class="hero-card-title">Como podemos proteger você</div>
+
+            <ul class="hero-card-list">
+              <li>
+                <a
+                  href="#servico-saude"
+                  data-track="click_hero_service_health"
+                  aria-label="Conhecer plano de saúde"
+                >
+                  <span class="hi hi-gold">
+                    <i data-lucide="heart-pulse" aria-hidden="true"></i>
+                  </span>
+
+                  <span>Saúde e odontológico</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#servico-auto"
+                  data-track="click_hero_service_auto"
+                  aria-label="Conhecer seguro auto"
+                >
+                  <span class="hi hi-gold">
+                    <i data-lucide="car" aria-hidden="true"></i>
+                  </span>
+
+                  <span>Seguro Auto</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#servico-residencial"
+                  data-track="click_hero_service_home"
+                  aria-label="Conhecer seguro residencial"
+                >
+                  <span class="hi hi-gold">
+                    <i data-lucide="home" aria-hidden="true"></i>
+                  </span>
+
+                  <span>Seguro Residencial</span>
+                </a>
+              </li>
+
+              <li>
+                <a
+                  href="#servico-empresarial"
+                  data-track="click_hero_service_business"
+                  aria-label="Conhecer seguro empresarial"
+                >
+                  <span class="hi hi-gold">
+                    <i data-lucide="briefcase-business" aria-hidden="true"></i>
+                  </span>
+
+                  <span>Seguro Empresarial</span>
+                </a>
+              </li>
+            </ul>
+
+            <div class="hero-card-note">
+              <strong>Orientação antes da contratação</strong><br />
+              A AF analisa seu perfil e explica as alternativas disponíveis com
+              clareza.
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!-- SERVIÇOS -->
+      <section
+        id="servicos"
+        class="section section-subtle"
+        aria-labelledby="servicos-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker kicker-gold">Soluções personalizadas</span>
+
+            <h2 id="servicos-title">
+              Proteção para diferentes momentos da sua vida
+            </h2>
+
+            <p>
+              Encontre a solução mais adequada para sua família, seu patrimônio
+              ou sua empresa, com atendimento próximo e orientação
+              personalizada.
+            </p>
+          </div>
+
+          <div class="grid grid-4 services-grid" id="services-grid">
+            <article
+              class="service-card priority"
+              id="servico-saude"
+              tabindex="-1"
+            >
+              <span class="service-icon">
+                <i data-lucide="heart-pulse" aria-hidden="true"></i>
+              </span>
+
+              <h3>Saúde e Odontológico</h3>
+
+              <p>
+                Planos individuais, familiares e empresariais, selecionados
+                conforme seu perfil, suas necessidades e a disponibilidade das
+                operadoras.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Plano de Saúde"
+                data-track="click_service_health"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article class="service-card" id="servico-auto" tabindex="-1">
+              <span class="service-icon">
+                <i data-lucide="car" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Auto</h3>
+
+              <p>
+                Proteção personalizada para seu veículo, considerando seu
+                perfil, sua rotina e as coberturas disponíveis.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Auto"
+                data-track="click_service_auto"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article
+              class="service-card"
+              id="servico-residencial"
+              tabindex="-1"
+            >
+              <span class="service-icon">
+                <i data-lucide="home" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Residencial</h3>
+
+              <p>
+                Proteção para sua residência, seus bens e situações previstas
+                nas condições da cobertura contratada.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Residencial"
+                data-track="click_service_home"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article
+              class="service-card"
+              id="servico-empresarial"
+              tabindex="-1"
+            >
+              <span class="service-icon">
+                <i data-lucide="briefcase-business" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Empresarial</h3>
+
+              <p>
+                Proteção para o patrimônio, a operação e a continuidade do seu
+                negócio, conforme as coberturas contratadas.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Empresarial"
+                data-track="click_service_business"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+            <article class="service-card">
+              <span class="service-icon">
+                <i data-lucide="shield" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro de Vida</h3>
+
+              <p>
+                Proteção financeira para pessoas, famílias, profissionais e
+                equipes.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro de Vida"
+                data-track="click_service_life"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-icon">
+                <i data-lucide="plane" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Viagem</h3>
+
+              <p>
+                Assistências e coberturas para viagens nacionais e
+                internacionais.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Viagem"
+                data-track="click_service_travel"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-icon">
+                <i data-lucide="bike" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Bike</h3>
+
+              <p>
+                Alternativas de proteção para bicicleta, conforme as condições
+                do produto.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Bike"
+                data-track="click_service_bike"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+
+            <article class="service-card">
+              <span class="service-icon">
+                <i data-lucide="key-round" aria-hidden="true"></i>
+              </span>
+
+              <h3>Seguro Fiança</h3>
+
+              <p>
+                Solução que pode substituir outras garantias em contratos de
+                locação.
+              </p>
+
+              <a
+                href="#cotacao"
+                data-service="Seguro Fiança"
+                data-track="click_service_fianca"
+              >
+                Solicitar cotação
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- DESTAQUE SAÚDE -->
+      <section class="section highlight-section" aria-labelledby="saude-title">
+        <div class="container highlight-card">
+          <div>
+            <span class="kicker kicker-gold">Atuação prioritária</span>
+            <h2 id="saude-title">
+              Planos de saúde e odontológicos com orientação para uma escolha
+              consciente.
+            </h2>
+            <p>
+              A AF Corretora compreende o perfil do cliente, analisa
+              alternativas disponíveis e explica pontos relevantes antes da
+              contratação.
+            </p>
+          </div>
+
           <a
-            href="https://www.instagram.com/af_corretora_seguro_saude/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Instagram da AF Corretora"
+            href="#cotacao"
+            class="btn btn-primary"
+            data-service="Plano de Saúde"
+            data-track="click_health_highlight"
           >
-            <i data-lucide="instagram" aria-hidden="true"></i>
+            Cotar plano de saúde
           </a>
+        </div>
+      </section>
+
+      <!-- SOBRE -->
+      <section id="sobre" class="section" aria-labelledby="sobre-title">
+        <div class="container about-grid">
+          <div class="about-content">
+            <span class="kicker">Sobre a AF Corretora</span>
+
+            <h2 id="sobre-title">
+              Atendimento humano, consultivo e personalizado
+            </h2>
+
+            <p class="muted">
+              A AF Corretora de Seguros e Saúde nasceu com o propósito de
+              oferecer atendimento próximo, compreender as necessidades de cada
+              cliente e apresentar soluções de proteção adequadas ao seu perfil.
+            </p>
+
+            <p class="muted">
+              O atendimento é conduzido por
+              <strong>Débora Romero Franco de Almeida</strong>, corretora
+              responsável, com orientação clara, proximidade e acompanhamento
+              durante as etapas necessárias da cotação à contratação.
+            </p>
+
+            <div class="about-principles">
+              <article>
+                <i data-lucide="target" aria-hidden="true"></i>
+
+                <div>
+                  <h3>Missão</h3>
+                  <p>
+                    Atuar como ponte entre clientes, seguradoras e operadoras,
+                    compreendendo necessidades e apresentando soluções
+                    personalizadas.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <i data-lucide="heart-handshake" aria-hidden="true"></i>
+
+                <div>
+                  <h3>Compromisso</h3>
+                  <p>
+                    Proporcionar mais tranquilidade por meio de atendimento
+                    próximo, orientação clara e suporte adequado a cada
+                    necessidade.
+                  </p>
+                </div>
+              </article>
+
+              <article>
+                <i data-lucide="shield-check" aria-hidden="true"></i>
+
+                <div>
+                  <h3>Diferencial</h3>
+                  <p>
+                    Atuar de forma consultiva, analisando alternativas
+                    disponíveis antes de apresentar as opções ao cliente.
+                  </p>
+                </div>
+              </article>
+            </div>
+
+            <a
+              href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20conhecer%20as%20solu%C3%A7%C3%B5es%20da%20AF%20Corretora."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa
+              data-track="click_whatsapp_about"
+            >
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Falar com Débora
+            </a>
+          </div>
+
+          <figure class="about-media">
+            <div class="about-photo-wrapper">
+              <img
+                src="./assets/img/debora-almeida.png"
+                alt="Apresentação profissional de Débora Almeida, corretora de seguros e planos de saúde"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="1350"
+              />
+            </div>
+
+            <figcaption>
+              Débora Romero Franco de Almeida — corretora responsável.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SEGURADORAS E OPERADORAS -->
+      <section class="section section-subtle" aria-labelledby="parceiros-title">
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Operadoras e seguradoras</span>
+
+            <h2 id="parceiros-title">
+              Alternativas analisadas conforme cada solicitação
+            </h2>
+
+            <p>
+              A AF Corretora consulta alternativas disponíveis conforme o
+              produto, o perfil do cliente, a região de atendimento e as regras
+              vigentes de cada operadora ou seguradora.
+            </p>
+          </div>
+
+          <div class="partners-groups">
+            <div class="partners-group">
+              <h3>Saúde e odontológico</h3>
+
+              <div
+                class="partners-list"
+                aria-label="Operadoras de saúde e odontológico"
+              >
+                <span class="partner-name">Hapvida</span>
+                <span class="partner-name">SulAmérica</span>
+                <span class="partner-name">Amil</span>
+                <span class="partner-name">Porto</span>
+                <span class="partner-name">Prevent Senior</span>
+                <span class="partner-name">Unimed</span>
+              </div>
+            </div>
+
+            <div class="partners-group">
+              <h3>Seguros</h3>
+
+              <div
+                class="partners-list"
+                aria-label="Seguradoras disponíveis para consulta"
+              >
+                <span class="partner-name">Porto</span>
+                <span class="partner-name">Bradesco Seguros</span>
+                <span class="partner-name">Yelum</span>
+                <span class="partner-name">Allianz</span>
+                <span class="partner-name">Mapfre</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="fine partners-note">
+            As marcas são apresentadas exclusivamente para informar alternativas
+            que podem ser consultadas durante o atendimento. A disponibilidade,
+            aceitação, cobertura e contratação dependem das regras vigentes de
+            cada empresa.
+          </p>
+        </div>
+      </section>
+      <!-- DIFERENCIAIS -->
+      <section
+        id="diferenciais"
+        class="section"
+        aria-labelledby="diferenciais-title"
+      >
+        <div class="container why-grid">
+          <div>
+            <span class="kicker">Por que escolher a AF</span>
+            <h2 id="diferenciais-title">
+              Você não precisa analisar seguros sozinho.
+            </h2>
+
+            <p class="muted">
+              O atendimento consultivo ajuda a compreender diferenças entre
+              coberturas, condições e alternativas compatíveis com cada
+              necessidade.
+            </p>
+
+            <a
+              href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-wa
+              data-track="click_whatsapp_whyus"
+            >
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              Falar com a corretora
+            </a>
+          </div>
+
+          <div class="grid grid-2 diff-grid" id="diff-grid">
+            <article class="benefit-card">
+              <i data-lucide="search-check" aria-hidden="true"></i>
+              <h3>Análise de alternativas</h3>
+              <p>
+                Opções avaliadas conforme perfil, região, cobertura e
+                necessidade apresentada.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <i data-lucide="hand-heart" aria-hidden="true"></i>
+              <h3>Atendimento humanizado</h3>
+              <p>
+                Comunicação próxima, respeitosa e sem excesso de termos
+                técnicos.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <i data-lucide="badge-check" aria-hidden="true"></i>
+              <h3>Transparência</h3>
+              <p>
+                Orientação clara sobre condições, limites, coberturas e próximos
+                passos.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <i data-lucide="life-buoy" aria-hidden="true"></i>
+              <h3>Suporte no pós-venda</h3>
+              <p>
+                Acompanhamento em dúvidas, renovações e orientações relacionadas
+                a sinistros.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROCESSO -->
+      <section
+        id="processo"
+        class="section section-subtle"
+        aria-labelledby="processo-title"
+      >
+        <div class="container">
+          <div class="section-head">
+            <span class="kicker">Como funciona</span>
+            <h2 id="processo-title">
+              Um processo direto, da solicitação ao suporte
+            </h2>
+            <p>
+              Você recebe orientação em cada etapa necessária para avaliar e
+              contratar.
+            </p>
+          </div>
+
+          <ol class="grid steps steps-5" id="steps-grid">
+            <li>
+              <span>1</span>
+              <h3>Solicitação</h3>
+              <p>Você chama pelo WhatsApp ou envia o formulário.</p>
+            </li>
+
+            <li>
+              <span>2</span>
+              <h3>Entendimento</h3>
+              <p>
+                A corretora identifica sua necessidade, seu perfil e suas
+                prioridades.
+              </p>
+            </li>
+
+            <li>
+              <span>3</span>
+              <h3>Análise</h3>
+              <p>
+                São avaliadas alternativas disponíveis e compatíveis com a
+                solicitação.
+              </p>
+            </li>
+
+            <li>
+              <span>4</span>
+              <h3>Apresentação</h3>
+              <p>
+                Você recebe orientações sobre coberturas, condições e valores.
+              </p>
+            </li>
+
+            <li>
+              <span>5</span>
+              <h3>Contratação e suporte</h3>
+              <p>A AF auxilia na contratação e nas necessidades posteriores.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- FORMULÁRIO -->
+      <section id="cotacao" class="section" aria-labelledby="cotacao-title">
+        <div class="container">
+          <div class="form-shell">
+            <aside class="form-aside">
+              <span class="kicker kicker-gold">Cotação online</span>
+              <h2 id="cotacao-title">Solicite uma análise personalizada</h2>
+
+              <p>
+                Preencha o formulário para que a AF Corretora compreenda sua
+                necessidade e dê continuidade ao atendimento.
+              </p>
+
+              <ul class="checks">
+                <li>
+                  <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                  Solicitação inicial realizada online
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                  Atendimento humano e consultivo
+                </li>
+                <li>
+                  <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                  Retorno após a análise dos dados enviados
+                </li>
+              </ul>
+
+              <div class="wa-box">
+                <div class="wa-title">
+                  <i data-lucide="message-circle" aria-hidden="true"></i>
+                  Prefere WhatsApp?
+                </div>
+
+                <a
+                  href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-wa
+                  data-track="click_whatsapp_form"
+                  class="wa-link"
+                >
+                  Fale conosco agora
+                </a>
+              </div>
+            </aside>
+
+            <div class="form-body">
+              <form id="quote-form" class="quote-form">
+                <div class="field">
+                  <label for="name">Nome completo *</label>
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    autocomplete="name"
+                    required
+                    minlength="3"
+                    placeholder="Seu nome completo"
+                  />
+                </div>
+
+                <div class="row-2">
+                  <div class="field">
+                    <label for="whatsapp">WhatsApp *</label>
+                    <input
+                      id="whatsapp"
+                      name="whatsapp"
+                      type="tel"
+                      inputmode="tel"
+                      autocomplete="tel"
+                      required
+                      placeholder="(11) 99999-9999"
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="email">E-mail</label>
+                    <input
+                      id="email"
+                      name="email"
+                      type="email"
+                      autocomplete="email"
+                      placeholder="seuemail@exemplo.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="row-2">
+                  <div class="field">
+                    <label for="city">Cidade *</label>
+                    <input
+                      id="city"
+                      name="city"
+                      type="text"
+                      autocomplete="address-level2"
+                      value="São Paulo"
+                      required
+                    />
+                  </div>
+
+                  <div class="field">
+                    <label for="state">Estado *</label>
+                    <select
+                      id="state"
+                      name="state"
+                      autocomplete="address-level1"
+                      required
+                    >
+                      <option value="SP" selected>SP</option>
+                      <option value="Outro">Outro</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label for="insuranceType">Solução desejada *</label>
+                  <select id="insuranceType" name="insuranceType" required>
+                    <option value="" disabled selected>
+                      Selecione uma opção
+                    </option>
+                    <option value="Plano de Saúde">Plano de Saúde</option>
+                    <option value="Plano Odontológico">
+                      Plano Odontológico
+                    </option>
+                    <option value="Seguro Auto">Seguro Auto</option>
+                    <option value="Seguro Residencial">
+                      Seguro Residencial
+                    </option>
+                    <option value="Seguro Empresarial">
+                      Seguro Empresarial
+                    </option>
+                    <option value="Seguro de Vida">Seguro de Vida</option>
+                    <option value="Seguro Viagem">Seguro Viagem</option>
+                    <option value="Seguro Bike">Seguro Bike</option>
+                    <option value="Seguro Fiança">Seguro Fiança</option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </div>
+
+                <fieldset
+                  id="auto-fields"
+                  class="auto-fields hidden"
+                  aria-live="polite"
+                >
+                  <legend>Dados opcionais para Seguro Auto</legend>
+
+                  <div class="row-2">
+                    <div class="field">
+                      <label for="vehicle">Veículo</label>
+                      <input
+                        id="vehicle"
+                        name="vehicle"
+                        type="text"
+                        placeholder="Ex.: Honda Fit"
+                      />
+                    </div>
+
+                    <div class="field">
+                      <label for="model">Modelo</label>
+                      <input
+                        id="model"
+                        name="model"
+                        type="text"
+                        placeholder="Ex.: EXL"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="row-2">
+                    <div class="field">
+                      <label for="year">Ano</label>
+                      <input
+                        id="year"
+                        name="year"
+                        type="text"
+                        inputmode="numeric"
+                        maxlength="4"
+                        placeholder="Ex.: 2022"
+                      />
+                    </div>
+
+                    <div class="field">
+                      <label for="cep">CEP de pernoite</label>
+                      <input
+                        id="cep"
+                        name="cep"
+                        type="text"
+                        inputmode="numeric"
+                        maxlength="9"
+                        placeholder="00000-000"
+                      />
+                    </div>
+                  </div>
+                </fieldset>
+
+                <div class="field">
+                  <label for="notes">Observações</label>
+                  <textarea
+                    id="notes"
+                    name="notes"
+                    rows="4"
+                    maxlength="1000"
+                    placeholder="Conte brevemente o que você precisa"
+                  ></textarea>
+                </div>
+
+                <label class="privacy-check" for="privacyConsent">
+                  <input
+                    id="privacyConsent"
+                    name="privacyConsent"
+                    type="checkbox"
+                    required
+                  />
+                  <span>
+                    Autorizo o uso dos dados para atendimento desta solicitação
+                    e declaro que li o
+                    <a
+                      href="./politica-de-privacidade.html"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Aviso de Privacidade </a
+                    >.
+                  </span>
+                </label>
+
+                <button
+                  type="submit"
+                  class="btn btn-primary btn-lg btn-block"
+                  data-track="submit_quote_form"
+                >
+                  Enviar solicitação
+                  <i data-lucide="arrow-right" aria-hidden="true"></i>
+                </button>
+
+                <p class="fine">
+                  Os dados informados devem ser utilizados exclusivamente para
+                  atendimento, análise e retorno desta solicitação.
+                </p>
+
+                <p
+                  id="form-feedback"
+                  class="form-feedback"
+                  role="status"
+                  aria-live="polite"
+                ></p>
+              </form>
+
+              <div
+                id="form-success"
+                class="success hidden"
+                role="status"
+                aria-live="polite"
+              >
+                <div class="success-icon">
+                  <i data-lucide="check-circle-2" aria-hidden="true"></i>
+                </div>
+
+                <h3>Solicitação enviada</h3>
+
+                <p>
+                  Os dados foram encaminhados para atendimento. A AF Corretora
+                  dará continuidade após a análise da solicitação.
+                </p>
+
+                <a
+                  href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20acabei%20de%20enviar%20uma%20solicita%C3%A7%C3%A3o%20pelo%20site."
+                  class="btn btn-whatsapp"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-wa
+                  data-track="click_whatsapp_success"
+                >
+                  Continuar pelo WhatsApp
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONFIANÇA -->
+      <!-- CONFIANÇA -->
+      <section
+        id="confianca"
+        class="section section-subtle trust-section"
+        aria-labelledby="confianca-title"
+      >
+        <div class="container">
+          <div class="section-head trust-head">
+            <span class="kicker">Informações de confiança</span>
+
+            <h2 id="confianca-title">
+              Dados institucionais para um atendimento transparente
+            </h2>
+
+            <p>
+              Informações oficiais da AF Corretora para que você tenha mais
+              segurança no momento do contato e da solicitação da sua cotação.
+            </p>
+          </div>
+
+          <div class="trust-grid-modern">
+            <article class="trust-card-modern">
+              <div class="trust-icon">
+                <i data-lucide="badge-check" aria-hidden="true"></i>
+              </div>
+
+              <h3>Registro SUSEP</h3>
+              <p>261181203</p>
+            </article>
+
+            <article class="trust-card-modern">
+              <div class="trust-icon">
+                <i data-lucide="user-round-check" aria-hidden="true"></i>
+              </div>
+
+              <h3>Responsável</h3>
+              <p>Débora Romero Franco de Almeida</p>
+            </article>
+
+            <article class="trust-card-modern">
+              <div class="trust-icon">
+                <i data-lucide="clock-3" aria-hidden="true"></i>
+              </div>
+
+              <h3>Horário comercial</h3>
+              <p>Das 8h às 18h</p>
+            </article>
+
+            <article class="trust-card-modern instagram-card">
+              <a
+                href="https://www.instagram.com/af_corretora_seguro_saude/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="instagram-card-link"
+                aria-label="Abrir o Instagram oficial da AF Corretora em uma nova aba"
+              >
+                <div class="trust-icon instagram-icon" aria-hidden="true">
+                  <svg
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                    focusable="false"
+                  >
+                    <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <circle cx="17.5" cy="6.5" r="1"></circle>
+                  </svg>
+                </div>
+                <h3>Instagram oficial</h3>
+
+                <p>@af_corretora_seguro_saude</p>
+
+                <span class="instagram-cta"> Abrir perfil </span>
+              </a>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- SEO LOCAL -->
+      <section class="section local-section" aria-labelledby="local-title">
+        <div class="container local-card">
+          <span class="kicker">Atendimento local</span>
+          <h2 id="local-title">Planos de saúde e seguros em São Paulo</h2>
+
+          <p>
+            Atendimento consultivo para quem procura planos de saúde e
+            odontológicos, seguro auto, residencial, empresarial, vida, viagem,
+            bike e fiança.
+          </p>
+
+          <div class="keyword-list" aria-label="Principais soluções">
+            <span>Corretora de seguros em São Paulo</span>
+            <span>Plano de saúde em São Paulo</span>
+            <span>Plano odontológico</span>
+            <span>Seguro Auto</span>
+            <span>Seguro Residencial</span>
+            <span>Seguro para empresas</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section" aria-labelledby="faq-title">
+        <div class="container container-narrow">
+          <div class="section-head">
+            <span class="kicker">Perguntas frequentes</span>
+            <h2 id="faq-title">Tire suas dúvidas</h2>
+            <p>
+              Para uma orientação específica, fale com a AF Corretora pelo
+              WhatsApp.
+            </p>
+          </div>
+
+          <div class="faq-list" id="faq-list">
+            <details>
+              <summary>Como solicitar uma cotação?</summary>
+              <p>
+                Você pode solicitar atendimento pelo WhatsApp ou preencher o
+                formulário da página com seus dados e o tipo de proteção
+                procurado.
+              </p>
+            </details>
+
+            <details>
+              <summary>Quanto tempo leva para receber uma cotação?</summary>
+              <p>
+                O prazo varia conforme o produto e as informações necessárias. A
+                solicitação é analisada antes do retorno personalizado.
+              </p>
+            </details>
+
+            <details>
+              <summary>Quais soluções a AF Corretora oferece?</summary>
+              <p>
+                A corretora atua com planos de saúde e odontológicos, seguros
+                auto, residencial, empresarial, vida, viagem, bike, fiança e
+                outras soluções disponíveis para análise.
+              </p>
+            </details>
+
+            <details>
+              <summary>Posso parcelar o seguro?</summary>
+              <p>
+                As condições de pagamento e parcelamento dependem do produto, da
+                seguradora ou operadora e das regras vigentes no momento da
+                contratação.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                Como funciona o atendimento em caso de sinistro?
+              </summary>
+              <p>
+                A AF Corretora orienta o cliente sobre documentos, prazos e
+                comunicação com a seguradora durante o processo.
+              </p>
+            </details>
+
+            <details>
+              <summary>
+                A corretora analisa opções de diferentes seguradoras e
+                operadoras?
+              </summary>
+              <p>
+                Sim. As alternativas disponíveis são avaliadas conforme o
+                perfil, a região, o produto procurado e as regras de aceitação.
+              </p>
+            </details>
+
+            <details>
+              <summary>A AF Corretora atende pessoas e empresas?</summary>
+              <p>
+                Sim. O atendimento contempla pessoas físicas, famílias,
+                profissionais e empresas, conforme o produto solicitado.
+              </p>
+            </details>
+
+            <details>
+              <summary>Qual é o horário de atendimento?</summary>
+              <p>O atendimento comercial informado é das 8h às 18h.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="section final-cta" aria-labelledby="final-title">
+        <div class="container">
+          <div class="cta-band">
+            <div>
+              <h2 id="final-title">Solicite uma análise personalizada</h2>
+              <p>
+                Fale com a AF Corretora para compreender as alternativas
+                disponíveis para sua necessidade.
+              </p>
+            </div>
+
+            <div class="cta-actions">
+              <a
+                href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20uma%20cota%C3%A7%C3%A3o."
+                class="btn btn-whatsapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-wa
+                data-track="click_whatsapp_cta"
+              >
+                <i data-lucide="message-circle" aria-hidden="true"></i>
+                WhatsApp
+              </a>
+
+              <a
+                href="#cotacao"
+                class="btn btn-outline-light"
+                data-track="click_form_cta"
+              >
+                Formulário de cotação
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a
+            href="#topo"
+            class="brand footer-logo"
+            aria-label="AF Corretora de Seguros e Saúde — início"
+          >
+            <img
+              src="./assets/img/logo-af-corretora.png"
+              alt="AF Corretora de Seguros e Saúde"
+              class="footer-brand-logo"
+              loading="lazy"
+              width="300"
+              height="180"
+            />
+          </a>
+
+          <p class="muted">
+            Atendimento consultivo para ajudar pessoas e empresas a compreender,
+            comparar e contratar soluções de proteção adequadas às suas
+            necessidades.
+          </p>
+
+          <div class="socials" aria-label="Redes sociais">
+            <a
+              href="https://www.instagram.com/af_corretora_seguro_saude/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram da AF Corretora"
+            >
+              <i data-lucide="instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Contato</h3>
+
+          <ul class="footer-list contact-links">
+            <li>
+              <i data-lucide="phone" aria-hidden="true"></i>
+              <a href="tel:+5511974816598">(11) 97481-6598</a>
+            </li>
+            <li>
+              <i data-lucide="message-circle" aria-hidden="true"></i>
+              <a
+                href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Atendimento pelo WhatsApp
+              </a>
+            </li>
+            <li>
+              <i data-lucide="clock-3" aria-hidden="true"></i>
+              <span>Atendimento comercial: 8h às 18h</span>
+            </li>
+            <li>
+              <i data-lucide="map-pin" aria-hidden="true"></i>
+              <span>São Paulo/SP</span>
+            </li>
+            <li>
+              <i data-lucide="badge-check" aria-hidden="true"></i>
+              <span>SUSEP 261181203</span>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer-title">Navegação</h3>
+
+          <ul class="footer-list">
+            <li><a href="#servicos">Seguros</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#diferenciais">Diferenciais</a></li>
+            <li><a href="#processo">Como funciona</a></li>
+            <li><a href="#cotacao">Cotação</a></li>
+            <li><a href="#faq">Perguntas frequentes</a></li>
+          </ul>
         </div>
       </div>
 
-      <div>
-        <h3 class="footer-title">Contato</h3>
+      <div class="container footer-bottom">
+        <small>
+          © <span id="ano"></span> AF Corretora de Seguros e Saúde. Todos os
+          direitos reservados.
+        </small>
 
-        <ul class="footer-list contact-links">
-          <li>
-            <i data-lucide="phone" aria-hidden="true"></i>
-            <a href="tel:+5511974816598">(11) 97481-6598</a>
-          </li>
-          <li>
-            <i data-lucide="message-circle" aria-hidden="true"></i>
-            <a
-              href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Atendimento pelo WhatsApp
-            </a>
-          </li>
-          <li>
-            <i data-lucide="clock-3" aria-hidden="true"></i>
-            <span>Atendimento comercial: 8h às 18h</span>
-          </li>
-          <li>
-            <i data-lucide="map-pin" aria-hidden="true"></i>
-            <span>São Paulo/SP</span>
-          </li>
-          <li>
-            <i data-lucide="badge-check" aria-hidden="true"></i>
-            <span>SUSEP 261181203</span>
-          </li>
-        </ul>
+        <small>
+          <a href="./politica-de-privacidade.html">Aviso de Privacidade</a>
+          •
+          <a href="./termos-de-uso.html">Termos de Uso</a>
+        </small>
       </div>
+    </footer>
 
-      <div>
-        <h3 class="footer-title">Navegação</h3>
+    <a
+      href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
+      id="wa-float"
+      class="wa-float"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Fale com a AF Corretora pelo WhatsApp"
+      data-wa
+      data-track="click_whatsapp_floating"
+    >
+      <i data-lucide="message-circle" aria-hidden="true"></i>
+      <span>WhatsApp</span>
+    </a>
 
-        <ul class="footer-list">
-          <li><a href="#servicos">Seguros</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#diferenciais">Diferenciais</a></li>
-          <li><a href="#processo">Como funciona</a></li>
-          <li><a href="#cotacao">Cotação</a></li>
-          <li><a href="#faq">Perguntas frequentes</a></li>
-        </ul>
+    <noscript>
+      <div class="noscript-alert">
+        Para usar todos os recursos da página, habilite o JavaScript no
+        navegador. O contato pelo WhatsApp permanece disponível.
       </div>
-    </div>
+    </noscript>
 
-    <div class="container footer-bottom">
-      <small>
-        © <span id="ano"></span> AF Corretora de Seguros e Saúde.
-        Todos os direitos reservados.
-      </small>
+    <!-- Configurações e comportamento -->
+    <script src="./config.js" defer></script>
+    <script src="./app.js" defer></script>
 
-      <small>
-        <a href="./politica-de-privacidade.html">Aviso de Privacidade</a>
-        •
-        <a href="./termos-de-uso.html">Termos de Uso</a>
-      </small>
-    </div>
-  </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        if (window.lucide) {
+          window.lucide.createIcons();
+        }
 
-  <a
-    href="https://wa.me/5511974816598?text=Ol%C3%A1%2C%20gostaria%20de%20falar%20com%20a%20AF%20Corretora."
-    id="wa-float"
-    class="wa-float"
-    target="_blank"
-    rel="noopener noreferrer"
-    aria-label="Fale com a AF Corretora pelo WhatsApp"
-    data-wa
-    data-track="click_whatsapp_floating"
-  >
-    <i data-lucide="message-circle" aria-hidden="true"></i>
-    <span>WhatsApp</span>
-  </a>
-
-  <noscript>
-    <div class="noscript-alert">
-      Para usar todos os recursos da página, habilite o JavaScript no navegador.
-      O contato pelo WhatsApp permanece disponível.
-    </div>
-  </noscript>
-
-  <!-- Configurações e comportamento -->
-  <script src="./config.js" defer></script>
-  <script src="./app.js" defer></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      if (window.lucide) {
-        window.lucide.createIcons();
-      }
-
-      var year = document.getElementById("ano");
-      if (year) {
-        year.textContent = new Date().getFullYear();
-      }
-    });
-  </script>
-</body>
+        var year = document.getElementById("ano");
+        if (year) {
+          year.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
+  </body>
 </html>

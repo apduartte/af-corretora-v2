@@ -15,17 +15,7 @@
     } catch (_) {}
   }
   /* ---------- Dados ---------- */
-  const services = [
-    { icon: "heart", name: "Saúde e Odontológico", desc: "Planos individuais, familiares e empresariais com as principais operadoras.", featured: true },
-    { icon: "car", name: "Seguro Auto", desc: "Proteção completa para seu veículo com cobertura sob medida.", featured: true },
-    { icon: "home", name: "Seguro Residencial", desc: "Sua casa protegida contra incêndio, roubo e danos elétricos.", featured: true },
-    { icon: "briefcase", name: "Seguro Empresarial", desc: "Cobertura patrimonial e de responsabilidade civil para o seu negócio." },
-    { icon: "shield", name: "Seguro Vida", desc: "Tranquilidade financeira para quem você ama, quando mais precisarem." },
-    { icon: "plane", name: "Seguro Viagem", desc: "Viaje com assistência médica, bagagem e imprevistos cobertos." },
-    { icon: "paw-print", name: "Seguro Pet", desc: "Consultas, exames e cirurgias para o seu melhor amigo." },
-    { icon: "coins", name: "Consórcio", desc: "Uma alternativa planejada para conquistar bens sem juros." },
-  ];
-  const differentials = [
+    const differentials = [
     { icon: "scale", title: "Comparação entre seguradoras", desc: "Analisamos várias opções para você não pagar mais do que deveria." },
     { icon: "handshake", title: "Atendimento humanizado", desc: "Escuta ativa, linguagem clara e orientação sem pressão." },
     { icon: "headphones", title: "Suporte em sinistro", desc: "Estamos ao seu lado no momento em que você mais precisa." },
@@ -33,16 +23,7 @@
     { icon: "wallet", title: "Melhor custo-benefício", desc: "Foco no equilíbrio ideal entre cobertura, preço e serviço." },
     { icon: "clock", title: "Atendimento ágil", desc: "Resposta rápida no WhatsApp, sem burocracia desnecessária." },
   ];
-  const steps = [
-    "Você entra em contato pelo WhatsApp ou formulário.",
-    "A corretora entende sua necessidade e seu perfil.",
-    "Avaliamos as opções de seguro disponíveis.",
-    "Você recebe uma cotação personalizada.",
-    "Escolhemos juntos a melhor opção.",
-    "A contratação é feita com orientação completa.",
-    "Acompanhamos o pós-venda para ajustes e renovação.",
-    "Em caso de sinistro, você tem suporte especializado.",
-  ];
+  
   const trustItems = [
     "Atendimento personalizado",
     "Consultoria pessoa física e jurídica",
@@ -66,24 +47,7 @@
     const t = document.createElement("template");
     t.innerHTML = html.trim();
     return t.content.firstElementChild;
-  }
-  function renderServices() {
-    const grid = document.getElementById("services-grid");
-    services.forEach(s => {
-      const card = el(`
-        <article class="svc ${s.featured ? "featured" : ""}">
-          <div class="svc-icon"><i data-lucide="${s.icon}"></i></div>
-          <h3>${s.name}</h3>
-          <p>${s.desc}</p>
-          <a href="${waLink("Olá! Gostaria de uma cotação de " + s.name + ".")}" target="_blank" rel="noopener">
-            Cotar agora <i data-lucide="arrow-right"></i>
-          </a>
-        </article>
-      `);
-      card.querySelector("a").addEventListener("click", () => track("click_service_quote", { service: s.name }));
-      grid.appendChild(card);
-    });
-  }
+  }  
   function renderDifferentials() {
     const grid = document.getElementById("diff-grid");
     differentials.forEach(d => {
@@ -96,18 +60,7 @@
       `));
     });
   }
-  function renderSteps() {
-    const grid = document.getElementById("steps-grid");
-    steps.forEach((s, i) => {
-      grid.appendChild(el(`
-        <li>
-          <span class="step-num">0${i + 1}</span>
-          <p>${s}</p>
-        </li>
-      `));
-    });
-  }
-  function renderTrust() {
+    function renderTrust() {
     const grid = document.getElementById("trust-grid");
     trustItems.forEach(t => {
       grid.appendChild(el(`
@@ -183,16 +136,11 @@
   }
   /* ---------- Boot ---------- */
   document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById("year").textContent = new Date().getFullYear();
-    renderServices();
-    renderDifferentials();
-    renderSteps();
-    renderTrust();
-    renderFAQ();
-    renderInsuranceOptions();
-    bindWhatsApp();
-    bindTrackers();
-    bindForm();
+    const year = document.getElementById("ano");
+
+if (year) {
+  year.textContent = new Date().getFullYear();
+}
     // Ícones lucide (carregado via <script defer>)
     const initIcons = () => window.lucide && window.lucide.createIcons();
     if (window.lucide) initIcons();
