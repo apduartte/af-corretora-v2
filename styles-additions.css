@@ -310,3 +310,294 @@
   outline-offset: -5px;
   border-radius: 18px;
 }
+
+/* =========================================================
+   CORREÇÃO RESPONSIVA — AF CORRETORA
+   ========================================================= */
+
+/* Impede que elementos ultrapassem a largura da tela */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+main,
+section,
+.container,
+.container-narrow,
+.about-grid,
+.about-content,
+.about-media,
+.highlight-card,
+.form-shell,
+.footer-grid,
+.trust-grid-modern,
+.steps-5 {
+  min-width: 0;
+}
+
+img,
+video,
+iframe,
+svg {
+  max-width: 100%;
+}
+
+/* =========================================================
+   TABLETS E CELULARES
+   ========================================================= */
+
+@media (max-width: 959px) {
+  /* A seção Sobre deixa de ter duas colunas */
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .about-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .about-media {
+    width: 100%;
+    max-width: 480px;
+    margin-inline: auto;
+  }
+
+  .about-media img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Cinco etapas não cabem lado a lado no tablet */
+  .steps-5 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Garante que textos não criem largura extra */
+  .about-content,
+  .about-content p,
+  .about-content li,
+  .trust-card-modern,
+  .partner-name {
+    overflow-wrap: anywhere;
+  }
+}
+
+/* =========================================================
+   CELULARES
+   ========================================================= */
+
+@media (max-width: 639px) {
+  .container,
+  .container-narrow {
+    width: calc(100% - 32px);
+  }
+
+  .section {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
+  /* ---------- Cabeçalho ---------- */
+
+  .header-inner {
+    min-height: 64px;
+    gap: 8px;
+  }
+
+  .brand-with-logo {
+    min-width: 0;
+    flex: 0 1 auto;
+  }
+
+  .brand-logo {
+    width: auto;
+    height: 46px;
+    max-width: 88px;
+  }
+
+  .menu-toggle {
+    min-width: auto;
+    flex-shrink: 0;
+    gap: 4px;
+    padding: 8px 10px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .nav-cta {
+    display: inline-flex;
+    min-width: auto;
+    flex-shrink: 0;
+    padding: 9px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+
+  /* ---------- Menu aberto ---------- */
+
+  .nav.is-open {
+    top: 72px;
+    left: 16px;
+    right: 16px;
+    z-index: 100;
+    max-height: calc(100vh - 96px);
+    overflow-y: auto;
+  }
+
+  /* ---------- Seção Sobre ---------- */
+
+  .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 30px;
+  }
+
+  .about-content {
+    width: 100%;
+  }
+
+  .about-content h2 {
+    max-width: 100%;
+    font-size: clamp(27px, 8vw, 34px);
+    line-height: 1.12;
+  }
+
+  .about-content p {
+    width: 100%;
+    max-width: none;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .about-meta {
+    gap: 16px;
+    margin-block: 24px;
+  }
+
+  .about-meta li {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .about-meta li span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .about-media {
+    width: 100%;
+    max-width: 360px;
+    margin-inline: auto;
+  }
+
+  .about-media img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  /* ---------- Grades ---------- */
+
+  .steps-5,
+  .trust-grid-modern {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .grid {
+    margin-top: 36px;
+  }
+
+  /* ---------- Formulário ---------- */
+
+  .form-shell {
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .form-aside,
+  .form-body {
+    padding: 24px 20px;
+  }
+
+  .row-2 {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .field input,
+  .field select,
+  .field textarea {
+    min-width: 0;
+    font-size: 16px;
+  }
+
+  /* ---------- Rodapé ---------- */
+
+  .footer-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 36px;
+  }
+
+  .footer-brand-logo {
+    width: auto;
+    height: 76px;
+    max-width: 220px;
+  }
+
+  /* ---------- WhatsApp flutuante ---------- */
+
+  .wa-float {
+    right: 12px;
+    bottom: 12px;
+    max-width: calc(100vw - 24px);
+  }
+}
+
+/* =========================================================
+   CELULARES MUITO ESTREITOS
+   ========================================================= */
+
+@media (max-width: 380px) {
+  .container,
+  .container-narrow {
+    width: calc(100% - 24px);
+  }
+
+  .header-inner {
+    gap: 6px;
+  }
+
+  .brand-logo {
+    height: 42px;
+    max-width: 78px;
+  }
+
+  /* Exibe apenas o ícone do menu para economizar espaço */
+  .menu-toggle {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+  }
+
+  .menu-toggle span {
+    display: none;
+  }
+
+  .nav-cta {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+
+  .about-content h2 {
+    font-size: 27px;
+  }
+
+  .form-aside,
+  .form-body {
+    padding-inline: 16px;
+  }
+}
