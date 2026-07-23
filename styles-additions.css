@@ -601,3 +601,21 @@ svg {
     padding-inline: 16px;
   }
 }
+/* Correção do ícone Instagram no rodapé */
+.footer-instagram-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 800;
+  line-height: 1;
+  color: inherit;
+}
+
+/* Evita exibição de links/ícones vazios no rodapé */
+.footer-social a:empty,
+.social-links a:empty,
+.footer-brand a:empty,
+.footer-brand span:empty {
+  display: none !important;
+}
